@@ -87,17 +87,40 @@ header p{
     color: inherit;
 }
 
-
 #proyectos .card-img-top{
-    height: 200px;
+    width: 100%;
     object-fit: cover;
 
 
 }
 
-
 /* Footer */
 footer{
     background-color: var(--carbon);
     color: var(--blanco);
+}
+
+/* Media Queries, para resoluciones mayores*/
+/* tablets y laptops */
+@media (min-width: 992px) {
+    html {
+        font-size: 1.1rem;
+    }
+    .card-img-top {
+        height: 250px;
+    }
+}
+
+
+/*monitores grandes*/
+@media (min-width: 1400px) {
+    html {
+        font-size: 1.3rem;
+    }
+    .container {
+        max-width: 1320px;
+    }
+    .card-img-top {
+        height: 280px;
+    }
 }
